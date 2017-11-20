@@ -25,6 +25,7 @@ Features
      uses PBKDF2-SHA2, such as OpenSSL 1.1. Submitted by Antonio Quartulli,
      OpenVPN Inc. Fixes #1339
    * Add support for public keys encoded in PKCS#1 format. #1122
+   * ARMv8 Crypto Extensions: Faster AES and GCM
 
 Bugfix
    * Fix the name of a DHE parameter that was accidentally changed in 2.7.0.
