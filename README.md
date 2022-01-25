@@ -1,6 +1,11 @@
 README for Mbed TLS
 ===================
 
+> ## **Notice for openenclave-mbedtls**
+> This project is not intended to be consumed as a standalone fork of the Mbed TLS project. It only serves as a repository for Open Enclave SDK specific patches while they are in the process of being upstreamed, and is built through the main Open Enclave SDK project as a submodule.
+>
+> For Mbed TLS, please refer to the upstream repository at https://github.com/ARMmbed/mbedtls.
+
 Mbed TLS is a C library that implements cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols. Its small code footprint makes it suitable for embedded systems.
 
 Mbed TLS includes a reference implementation of the [PSA Cryptography API](#psa-cryptography-api). This is currently a preview for evaluation purposes only.
