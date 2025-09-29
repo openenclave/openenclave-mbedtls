@@ -353,9 +353,9 @@ static void mbedtls_ct_mem_move_to_left(void *start,
         for (n = 0; n < total - 1; n++) {
             unsigned char current = buf[n];
             unsigned char next = buf[n+1];
-            buf[n] = mbedtls_ct_uint_if(no_op, current, next);
+            buf[n] = (unsigned char)mbedtls_ct_uint_if(no_op, current, next);
         }
-        buf[total-1] = mbedtls_ct_uint_if(no_op, buf[total-1], 0);
+        buf[total-1] = (unsigned char)mbedtls_ct_uint_if(no_op, buf[total-1], 0);
     }
 }
 
